@@ -56,7 +56,7 @@ class _SignUpState extends State<SignUp> {
   GetEmirates? seletedEmirates;
   getEmirates() async {
     final http.Response response = await http.post(
-      Uri.parse('http://68.178.175.87/api/getemirates'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/getemirates'),
     );
     print('sc${response.body}');
     data = getEmiratesFromJson(response.body);
@@ -69,8 +69,9 @@ class _SignUpState extends State<SignUp> {
     var body = {
       'emirates_id': id,
     };
-    final http.Response response = await http
-        .post(Uri.parse('http://68.178.175.87/api/getarea'), body: body);
+    final http.Response response = await http.post(
+        Uri.parse('https://waterdelivery.calparglobal.com/api/getarea'),
+        body: body);
     print('///Area/sc${response.statusCode}');
     print(response.body);
     print(area);
@@ -582,10 +583,11 @@ class _SignUpState extends State<SignUp> {
                                                 .toString(),
                                             seletedArea!.areaId.toString(),
                                             flatController.text,
-                                            buildingController.text,bottleController.text);
+                                            buildingController.text,
+                                            bottleController.text);
                                       }
                                     },
-                                    color: AppColors.blue1,
+                                    color: AppColors.blue3,
                                     child: Text(
                                       'SignUp',
                                       style: GoogleFonts.poppins(

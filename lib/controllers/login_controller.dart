@@ -19,7 +19,7 @@ class LoginController extends GetxController {
     final SharedPreferences preferences = await SharedPreferences.getInstance();
     var body = {'username': phone, 'password': password};
     final http.Response response = await http.post(
-      Uri.parse('http://68.178.175.87/api/custlogin'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/custlogin'),
       body: body,
     );
     print('///////////sc${response.statusCode}');

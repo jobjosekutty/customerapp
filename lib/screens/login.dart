@@ -190,7 +190,7 @@ class LoginScreen extends StatelessWidget {
                                       passwordController.text);
                                 }
                               },
-                              color: AppColors.blue1,
+                              color: AppColors.blue3,
                               child: Text(
                                 'login',
                                 style: GoogleFonts.poppins(

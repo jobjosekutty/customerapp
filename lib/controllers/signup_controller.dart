@@ -73,7 +73,7 @@ class SignupController extends GetxController {
       'no_of_bottles': count
     };
     final http.Response response = await http.post(
-      Uri.parse('http://68.178.175.87/api/customer/signup'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/customer/signup'),
       body: body,
     );
     print('///////////sc${response.statusCode}');

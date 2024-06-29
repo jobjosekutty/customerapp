@@ -33,7 +33,7 @@ class _UpdateLocationState extends State<UpdateLocation> {
   GetEmirates? seletedEmirates;
   getEmirates() async {
     final http.Response response = await http.post(
-      Uri.parse('http://68.178.175.87/api/getemirates'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/getemirates'),
     );
     print('sc${response.body}');
     data = getEmiratesFromJson(response.body);
@@ -47,8 +47,9 @@ class _UpdateLocationState extends State<UpdateLocation> {
     var body = {
       'emirates_id': id,
     };
-    final http.Response response = await http
-        .post(Uri.parse('http://68.178.175.87/api/getarea'), body: body);
+    final http.Response response = await http.post(
+        Uri.parse('https://waterdelivery.calparglobal.com/api/getarea'),
+        body: body);
     print('///Area/sc${response.statusCode}');
     print(response.body);
     print(area);
@@ -337,7 +338,7 @@ class _UpdateLocationState extends State<UpdateLocation> {
                                       );
                                     }
                                   },
-                                  color: AppColors.blue1,
+                                  color: AppColors.blue3,
                                   child: const Text("UpdateLocation"),
                                 ),
                               );

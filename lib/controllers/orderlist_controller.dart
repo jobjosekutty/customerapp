@@ -13,7 +13,7 @@ class OrderlistController extends GetxController {
     var auth = preferences.getString("token");
 
     final http.Response response = await http.get(
-      Uri.parse('http://68.178.175.87/api/customerorder/lists/$auth'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/customerorder/lists/$auth'),
       //  body: body,
     );
     print('////orderlist/sc${response.statusCode}');

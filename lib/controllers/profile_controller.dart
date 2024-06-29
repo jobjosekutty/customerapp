@@ -25,7 +25,7 @@ class ProfileController extends GetxController {
     var auth = preferences.getString("token");
     print("===???$auth");
     final http.Response response = await http.get(
-      Uri.parse('http://68.178.175.87/api/customer/profile/$auth'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/customer/profile/$auth'),
     );
     print(response.statusCode);
     print(response.body);
@@ -41,7 +41,7 @@ class ProfileController extends GetxController {
     var auth = preferences.getString("token");
     print("===???$auth");
     final http.Response response = await http.get(
-      Uri.parse('http://68.178.175.87/api/driver/logout/$auth'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/driver/logout/$auth'),
     );
     print(response.body);
     if (response.statusCode == 200) {

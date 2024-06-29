@@ -1,4 +1,4 @@
-package com.haya.customerapp
+package com.hwd.customerapp
 
 import io.flutter.embedding.android.FlutterActivity
 

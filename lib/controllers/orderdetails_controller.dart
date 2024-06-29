@@ -13,7 +13,7 @@ class OrderdetailsController extends GetxController {
     var auth = preferences.getString("token");
     var body = {'order_id': orderid, 'token': auth};
     final http.Response response = await http.post(
-      Uri.parse('http://68.178.175.87/api/customerorder/detail'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/customerorder/detail'),
       body: body,
     );
     print('///////////sc${response.statusCode}');

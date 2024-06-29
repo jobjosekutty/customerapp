@@ -18,7 +18,7 @@ class HomeController extends GetxController {
     var auth = preferences.getString("token");
     var body = {'token': auth, 'no_of_bottles': count};
     final http.Response response = await http.post(
-      Uri.parse('http://68.178.175.87/api/customer/createorder'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/customer/createorder'),
       body: body,
     );
     print('///////////sc${response.statusCode}');

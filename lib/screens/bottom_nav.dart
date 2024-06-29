@@ -42,7 +42,7 @@ class _BottomNavState extends State<BottomNav> {
         backgroundColor: AppColors.white,
         centerTitle: true,
         title: Text(
-          "HAYA",
+          "HWD",
           style: TextStyle(color: AppColors.black),
         ),
       ),

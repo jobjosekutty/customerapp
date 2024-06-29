@@ -8,7 +8,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:numberpicker/numberpicker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -199,7 +198,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   }
                                 }
                               },
-                              color: AppColors.blue1,
+                              color: AppColors.blue3,
                               child: const Text("Place Order"),
                             ),
                           );

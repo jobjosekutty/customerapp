@@ -20,7 +20,7 @@ class CouponController extends GetxController {
     print(auth);
     var body = {'token': auth};
     final http.Response response = await http.post(
-      Uri.parse('http://68.178.175.87/api/customer/couponlists'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/customer/couponlists'),
       body: body,
     );
     print('///////////sc${response.statusCode}');

@@ -112,7 +112,7 @@ class _OrderListScreenState extends State<OrderListScreen> {
                                             orderid: orderlistController
                                                 .data[index].orderId));
                                       },
-                                      color: AppColors.blue1,
+                                      color: AppColors.blue3,
                                       child: const Text("Order Details"),
                                     ),
                                   ),

@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
           child: Image.asset(
-        'assets/logo.jpeg',
+        'assets/hwd.png',
         height: 200,
         width: 200,
       )),

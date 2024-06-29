@@ -23,7 +23,7 @@ class UpdateLocationController extends GetxController {
       'flat_no': flat
     };
     final http.Response response = await http.post(
-      Uri.parse('http://68.178.175.87/api/customerdelivery/locationupdate'),
+      Uri.parse('https://waterdelivery.calparglobal.com/api/customerdelivery/locationupdate'),
       body: body,
     );
     print('///////////sc${response.statusCode}');
